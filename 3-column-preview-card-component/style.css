@@ -22,6 +22,8 @@ body {
    min-height: 100vh;
 
    font-size: 15px;
+
+   background-color: var(--very-light-gray);
 }
 
 main {
