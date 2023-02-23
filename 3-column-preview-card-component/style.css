@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+   --bright-orange: hsl(31, 77%, 52%);
+   --dark-cyan: hsl(184, 100%, 22%);
+   --very-dark-cyan: hsl(179, 100%, 13%);
+
+   --transparent-white: hsla(0, 0%, 100%, 0.75);
+   --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   display: grid;
+   place-items: center;
+
+   min-height: 100vh;
+
+   font-size: 15px;
+}
+
+main {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+
+   width: 900px;
+}
+
+.column {
+   padding: 50px;
+   padding-right: 40px;
+}
+
+.column:nth-of-type(1) {
+   background-color: var(--bright-orange);
+
+   border-top-left-radius: 7.5px;
+   border-bottom-left-radius: 7.5px;
+}
+
+.column:nth-of-type(2) {
+   background-color: var(--dark-cyan);
+}
+
+.column:nth-of-type(3) {
+   background-color: var(--very-dark-cyan);
+
+   border-top-right-radius: 7.5px;
+   border-bottom-right-radius: 7.5px;
+}
+
+.column:nth-of-type(1) .learn-more-button {
+   color: var(--bright-orange);
+}
+
+.column:nth-of-type(2) .learn-more-button {
+   color: var(--dark-cyan);
+}
+
+.column:nth-of-type(3) .learn-more-button {
+   color: var(--very-dark-cyan);
+}
+
+.title {
+   font-family: "Big Shoulders Display";
+   font-size: 2.5em;
+   color: var(--very-light-gray);
+
+   margin-top: 30px;
+}
+
+.description {
+   color: var(--transparent-white);
+   margin-top: 20px;
+
+   line-height: 1.75em;
+}
+
+.learn-more-button {
+   background-color: var(--very-light-gray);
+   
+   border: 2px solid var(--very-light-gray);
+   border-radius: 50px;
+
+   width: 140px;
+   height: 48px;
+
+   font-size: 1em;
+
+   margin-top: 80px;
+
+   transition: .1s;
+}
+
+.description, .learn-more-button {
+   font-family: "Lexend Deca";
+}
+
+.column .learn-more-button:hover {
+   background: none;
+   
+   color: var(--very-light-gray);
+
+   cursor: pointer;
+}
+
+@media (width <= 910px) {
+   main {
+      grid-template-columns: 1fr;
+
+      width: 300px;
+
+      margin: 90px 0;
+   }
+
+   .column .learn-more-button {
+      margin-top: 30px;
+   }
+
+   .column:nth-of-type(1) {
+      border-top-left-radius: 7.5px;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 7.5px;
+   }
+
+   .column:nth-of-type(3) {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 7.5px;
+      border-bottom-left-radius: 7.5px;
+   }
+}
