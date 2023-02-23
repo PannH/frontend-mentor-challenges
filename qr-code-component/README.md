@@ -6,6 +6,10 @@ Solution for the [Frontend Mentor QR code component challenge](https://www.front
 
 - Pure HTML & CSS
 
+## Website
+
+- https://pannh-qr-code-component.netlify.app/
+
 ## Author
 
 - Frontend Mentor - [@PannH](https://www.frontendmentor.io/profile/pannh)

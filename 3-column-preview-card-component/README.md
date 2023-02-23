@@ -6,6 +6,10 @@ Solution for the [Frontend Mentor 3-column preview card component challenge](htt
 
 - Pure HTML & CSS
 
+## Website
+
+- https://pannh-3-column-preview-card-component.netlify.app/
+
 ## Author
 
 - Frontend Mentor - [@PannH](https://www.frontendmentor.io/profile/pannh)
